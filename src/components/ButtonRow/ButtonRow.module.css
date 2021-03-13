@@ -1,2 +1,7 @@
 .buttonRow {
+  overflow-x: auto;
+  white-space: nowrap;
+  /* to move the scrollbar in to the parents padding*/
+  padding-bottom: 16px;
+  margin-bottom: -16px;
 }

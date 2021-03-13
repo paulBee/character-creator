@@ -1,0 +1,8 @@
+.backdrop {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 60%;
+  background-color: hsl(195deg, 20%, 86%);
+}
