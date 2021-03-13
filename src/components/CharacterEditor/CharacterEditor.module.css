@@ -2,6 +2,7 @@
   padding-top: 128px;
   padding-bottom: 64px;
   isolation: isolate;
+  min-height: 100vh;
 }
 
 .maxWidthWrapper {
@@ -29,7 +30,7 @@
   position: fixed;
   min-height: 500px;
   width: 512px;
-  padding: 0 40px;
+  padding: 0 64px;
   top: 128px;
   left: 50%;
   right: 0;
@@ -38,4 +39,31 @@
 
 .controlColumn {
   max-width: 50%;
+}
+
+@media (max-width: 800px) {
+
+  .characterEditor {
+    padding-top: 32px;
+  }
+
+  .header {
+    margin-bottom: 25vh;
+    max-width: 50%;
+    isolation: isolate;
+  }
+
+  .characterWrapper {
+    left: 25%;
+  }
+
+  .controlColumn {
+    max-width: unset;
+    width: 100%;
+    isolation: isolate;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+  }
+
 }
